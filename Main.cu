@@ -105,7 +105,7 @@ int main(int argc, char *argv[])
     }
 
     // after verification , printing the time taken by both algorithm
-    printf("CPU time: %lf msec\n", (cpuKcoreinfo->timeTaken) * 1000.0);
-    printf("GPU time: %lf msec\n", (gpuKcoreinfo->timeTaken) * 1000.0);
+    printf("CPU time: %lf ms\n", (cpuKcoreinfo->timeTaken) * 1000.0);
+    printf("GPU time: %lf ms\n", (gpuKcoreinfo->timeTaken) * 1000.0);
 
 }
