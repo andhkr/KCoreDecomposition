@@ -150,6 +150,16 @@ The following test cases were generated and evaluated:
 
 All graphs were generated using the BA model with m0=5 and edges_per_node=5, resulting in approximately 5n edges for n nodes.
 
+### Run Compare Script
+After generating all above mentioned test cases 
+
+To generate Performance Comparision Table:
+
+```bash
+ make (to build executable if not built)
+ bash comparesGraph.sh
+```
+
 ## Performance Results
 
 ### Comparative Analysis (K=8)
