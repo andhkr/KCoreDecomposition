@@ -80,6 +80,10 @@ Or directly:
 ./fixedKCoreComputation 100000 499985 testGraph_100000_499985.txt 8
 ```
 
+Or only  (defaults argument will be taken)
+```bash
+make run 
+```
 ### Output Format:
 
 ```
