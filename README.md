@@ -314,13 +314,14 @@ The `Main.cu` file includes assertions to verify that CPU and GPU implementation
 - CUDA Programming Guide: https://docs.nvidia.com/cuda/
 - CUDA Profiling Tools: https://docs.nvidia.com/cuda/profiler-users-guide/
 
+## Group Members
+ - Anup Kumar (112201042)
+ - Nikhil S Thomas (112201047)
+
 ## License
 
 This project is provided for educational purposes.
 
 ---
-## Group Members
- - Anup Kumar (112201042)
- - Nikhil S Thomas (112201047)
 
 **Last Updated**: November 2025
