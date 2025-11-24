@@ -1,1 +1,8 @@
 *.txt
+
+!testGraph_100000_499985.txt
+!DiffgraphResults.txt
+!profiling_results/APITrace.txt
+!profiling_results/BasicProfile.txt
+!profiling_results/FullProfile.txt
+!profiling_results/KernelTrace.txt

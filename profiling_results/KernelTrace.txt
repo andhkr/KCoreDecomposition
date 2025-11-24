@@ -1,0 +1,23 @@
+==504517== NVPROF is profiling process 504517, command: ./fixedKCoreComputation 1000000 4999985 testGraph_1000000_4999985.txt 10
+==504517== Profiling application: ./fixedKCoreComputation 1000000 4999985 testGraph_1000000_4999985.txt 10
+==504517== Profiling result:
+   Start  Duration            Grid Size      Block Size     Regs*    SSMem*    DSMem*      Size  Throughput  SrcMemType  DstMemType           Device   Context    Stream  Name
+360.80ms  3.2536ms                    -               -         -         -         -  19.073MB  5.7248GB/s    Pageable      Device  NVIDIA GeForce          1         7  [CUDA memcpy HtoD]
+364.21ms  556.63us                    -               -         -         -         -  3.8147MB  6.6926GB/s    Pageable      Device  NVIDIA GeForce          1         7  [CUDA memcpy HtoD]
+364.78ms  1.2150us                    -               -         -         -         -        4B  3.1397MB/s    Pageable      Device  NVIDIA GeForce          1         7  [CUDA memcpy HtoD]
+364.78ms     863ns                    -               -         -         -         -        4B  4.4203MB/s    Pageable      Device  NVIDIA GeForce          1         7  [CUDA memcpy HtoD]
+364.79ms     832ns                    -               -         -         -         -        4B  4.5850MB/s    Pageable      Device  NVIDIA GeForce          1         7  [CUDA memcpy HtoD]
+364.80ms     832ns                    -               -         -         -         -        4B  4.5850MB/s    Pageable      Device  NVIDIA GeForce          1         7  [CUDA memcpy HtoD]
+364.83ms  38.354us           (1954 1 1)       (512 1 1)        18        0B        0B         -           -           -           -  NVIDIA GeForce          1         7  initFrontier(int*, int*, int*, int*, int*, int*) [231]
+364.88ms  1.5030us                    -               -         -         -         -        4B  2.5381MB/s      Device    Pageable  NVIDIA GeForce          1         7  [CUDA memcpy DtoH]
+364.90ms  34.452us           (1954 1 1)       (512 1 1)        20        0B        0B         -           -           -           -  NVIDIA GeForce          1         7  fixedKcoreComputation(int*, int*, int*, int*, int*, int*) [234]
+364.94ms     863ns                    -               -         -         -         -        4B  4.4203MB/s    Pageable      Device  NVIDIA GeForce          1         7  [CUDA memcpy HtoD]
+364.95ms  14.682us           (1954 1 1)       (512 1 1)        16        0B        0B         -           -           -           -  NVIDIA GeForce          1         7  updateFrontier(int*, int*, int*) [236]
+364.97ms  1.5030us                    -               -         -         -         -        4B  2.5381MB/s      Device    Pageable  NVIDIA GeForce          1         7  [CUDA memcpy DtoH]
+364.99ms  1.3057ms                    -               -         -         -         -  3.8147MB  2.8532GB/s      Device    Pageable  NVIDIA GeForce          1         7  [CUDA memcpy DtoH]
+
+Regs: Number of registers used per CUDA thread. This number includes registers used internally by the CUDA driver and/or tools and can be more than what the compiler shows.
+SSMem: Static shared memory allocated per CUDA block.
+DSMem: Dynamic shared memory allocated per CUDA block.
+SrcMemType: The type of source memory accessed by memory operation/copy
+DstMemType: The type of destination memory accessed by memory operation/copy
