@@ -123,8 +123,16 @@ BA graphs exhibit scale-free properties with power-law degree distributions, mak
 
 Each line represents an undirected edge:
 ```
-node1 node2
-node3 node4
+node1 nbr1
+node1 nbr2
+.
+.
+.
+node2 nbr1
+node2 nbr2
+.
+.
+.
 ...
 ```
 
@@ -295,15 +303,9 @@ The `Main.cu` file includes assertions to verify that CPU and GPU implementation
 
 ## Comparison with CUDA Libraries
 
-**Note**: Standard CUDA graph libraries (like cuGraph/RAPIDS) do not provide direct Fixed K-Core computation primitives. The algorithm is specialized for iterative subgraph extraction, which is not a standard primitive in general-purpose graph libraries.
+**Note**: Standard CUDA graph libraries (like cuGraph/RAPIDS) do not provide direct Fixed K-Core computation primitives. The algorithm is specialized for iterative subgraph extraction, which is not a standard primitive in general-purpose graph libraries. In addition, some installation and permission constraints prevented the use of these libraries on the evaluation environment. Therefore, comparisons against standard CUDA graph libraries were not included.
 
 **Current Comparison**: Custom CUDA implementation vs. single-threaded CPU baseline (shown in performance results above).
-
-### Why Standard Libraries Weren't Used:
-
-1. **cuGraph**: Provides k-core decomposition but not fixed k-core extraction with the specific peeling algorithm used here
-2. **Thrust**: Could accelerate individual operations but doesn't provide graph algorithm primitives for this specific variant
-3. **Custom Implementation**: Required for this specialized algorithm with frontier-based iterative computation
 
 ## References
 
@@ -317,5 +319,8 @@ The `Main.cu` file includes assertions to verify that CPU and GPU implementation
 This project is provided for educational purposes.
 
 ---
+## Group Members
+ - Anup Kumar (112201042)
+ - Nikhil S Thomas (112201047)
 
 **Last Updated**: November 2025
